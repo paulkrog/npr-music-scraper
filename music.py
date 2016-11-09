@@ -9,7 +9,7 @@ import pprint as pp
 if __name__ == "__main__":
     pp.pprint("---GETting HTML from npr.org---")
     resp = requests.get(
-        "https://web.archive.org/web/20161108001849/http://www.npr.org/programs/all-things-considered/")
+        "http://www.npr.org/programs/all-things-considered/")
     tree = html.fromstring(resp.content)
     # get titles
     song_wrappers = tree.find_class("song-meta-wrap")
