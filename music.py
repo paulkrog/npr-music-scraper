@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 import webbrowser as wb
 import requests
 from lxml import html
