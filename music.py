@@ -18,5 +18,5 @@ if __name__ == "__main__":
         queries.append(" ".join((wrapper.text_content()).split()))
 
     for query in queries:
-        wb.open_new("http://youtube.com/results?search_query=" + query)
+        wb.open_new_tab("http://youtube.com/results?search_query=" + query)
     pp.pprint("---Check your browser batch---")
